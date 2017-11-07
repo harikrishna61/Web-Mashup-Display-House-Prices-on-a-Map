@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name:Harikrishna bathala
+-->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+      <style>
+          #map {
+              width: 600px;
+              height: 500px;
+              background-color: grey;
+          }
+      </style>
+    <script type="text/javascript" src="map.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxxtPBFhL1nG2y9pyFmWDuAEHyRo2ozLc&callback=initialize">
+    </script>
+
+  </head>
+  <body >
+    <form >
+        <label> <input type="text" id="find_Zestimate"/> </label>
+        <input type="button"  value="Find" id="submit"/>
+        <br><br>
+        <input type="button" value="Clear" onclick="clear_input();" id="clear" />
+        <br><br>
+    </form>
+    <div id="map" ></div><br/>
+    <div id="output">&nbsp;</div>
+  </body>
+</html>
